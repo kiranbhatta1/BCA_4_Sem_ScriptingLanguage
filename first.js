@@ -1,13 +1,4 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title>JavaScript Example</title>
-</head>
-<body>
-    <p>This is a paragraph</p>
-    <p id="myparagraph">The content is loaded from JS</p>
 
-    <script>
         document.write("This is from JS ");
         document.write("This is also from JS");
 
@@ -22,6 +13,4 @@
 
         let pa = document.getElementById("myparagraph");
         pa.innerHTML = "<i>This is added by JS</i>";
-    </script>
-</body>
-</html>
+
