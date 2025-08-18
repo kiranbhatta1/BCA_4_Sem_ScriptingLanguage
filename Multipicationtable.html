@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Multiplication Table</title>
+</head>
+<body>
+
+<p id="myparagraph">This result will appear here.</p>
+
+<script>
+    function MUlTable(a) {
+        let res = "";
+        for (let i = 1; i <= 10; i++) {
+            res += a + " x " + i + " = " + (a * i) + "<br>";
+        }
+        return res;
+    }
+
+  let n = parseInt(prompt("Enter a number:"));
+
+    let table = MUlTable(n);
+    document.getElementById("myparagraph").innerHTML = table;
+</script>
+
+</body>
+</html>
