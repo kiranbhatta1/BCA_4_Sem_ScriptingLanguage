@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multiplication Table on Web Page by Prompt</title>
+</head>
+<body>
+    <h2 id="table">Multiplication Table by input from dialog box and result on the web page</h2>
+    <script>
+        let num = parseInt(prompt("Enter a number:"));
+        let table = "<h3>Multiplication Table for " + num + ":</h3>";
+
+        // Loop to create the multiplication table
+        for (let i = 1; i <= 10; i++) {
+            table += "<p>" + num + " x " + i + " = " + (num * i) + "</p>";
+        }
+
+        // Display the table on the web page
+        document.getElementById("table").innerHTML = table;
+    </script>
+</body>
+</html>
