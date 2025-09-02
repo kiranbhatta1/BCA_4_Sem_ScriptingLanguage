@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input by Prompt</title>
+</head>
+<body>
+    <p>
+        Check whether the number is a single, double, triple, or multi-digit number using if-else statements.
+    </p>
+    <script>
+        let num = parseInt(prompt("Enter a number: "));
+            if (num >= 0 && num <= 9) {
+                alert("The entered number " + num + " is a single digit.");
+            } else if (num >= 10 && num <= 99) {
+                alert("The entered number " + num + " is a double digit.");
+            } else if (num >= 100 && num <= 999) {
+                alert("The entered number " + num + " is a triple digit.");
+            } else {
+                alert("The entered number " + num + " is a multi-digit number.");
+            }
+       
+    </script>
+      <pre>
+        Lab No:2.b
+        Name: Kiran Bhatta
+        Roll No./Section: 19'A'
+    </pre>
+</body>
+</html>
