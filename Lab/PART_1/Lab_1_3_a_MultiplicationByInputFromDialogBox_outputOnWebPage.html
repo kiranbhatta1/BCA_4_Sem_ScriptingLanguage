@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multiplication Table on Web Page by Prompt</title>
+</head>
+<body>
+    <h2 id="Table">Multiplication Table</h2>
+    <script>
+        let num = parseInt(prompt("Enter a number:"));
+        let result = "";
+        for (let i = 1; i <= 10; i++) {
+            result += num + " x " + i + " = " + (num * i) + "<br>";
+        }
+        document.getElementById('Table').innerHTML=result;
+        
+    </script>
+    <Pre>
+    Lab No:3.a
+        Name: Kiran Bhatta
+        Roll No./Section: 19'A'
+        </Pre>
+</body>
+</html>
+
