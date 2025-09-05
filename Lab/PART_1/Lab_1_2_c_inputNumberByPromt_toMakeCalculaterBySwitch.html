@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator by switch</title>
+</head>
+<body>
+    <p>Input number by prompt to make Calculator(+,-,*,/) by switch case</p>
+    <script>
+        let num1=parseInt(prompt("Enter first number: "));
+        let num2=parseInt(prompt("Enter second number: "));
+        let cal=prompt("Enter operation(+,-,*,/):");
+        switch(cal){
+            case '+' :
+                alert("Addtion of "+num1+cal+num2+" is: "+(num1+num2));
+                break; 
+                case '-' :
+                alert("Subtraction of "+num1+cal+num2+" is: "+(num1-num2));
+                break;
+                case '*' :
+                alert("Multiplication of "+num1+cal+num2+" is: "+(num1*num2));
+                break;
+                case '/' :
+                alert("Division of "+num1+cal+num2+" is: "+(num1/num2));
+                break;
+                default:
+                alert("Invalid operation! Please enter one of the following: +, -, *, /");
+                break;
+        }
+          </script>
+            <pre>
+        Lab No:2.c
+        Name: Kiran Bhatta
+        Roll No./Section: 19'A'
+    </pre>
+</body>
+</html>
