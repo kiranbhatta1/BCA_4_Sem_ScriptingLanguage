@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Whether to take in another number or not</title>
+</head>
+<body>
+  <script>
+    let sum = 0;
+    let continueInput;
+
+    do {
+      let num = parseInt(prompt("Enter a number:"));
+       sum += num;
+
+      continueInput = confirm("Do you want to add another number?");
+    } while (continueInput);
+
+    alert("The total sum of all entered numbers is: " + sum);
+  </script>
+  <pre>
+    Lab No:3.c
+        Name: Kiran Bhatta
+        Roll No./Section: 19'A'
+  </pre>
+</body>
+</html>
