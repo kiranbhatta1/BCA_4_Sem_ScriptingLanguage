@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2D and 3D Array </title>
+</head>
+<body>
+    <h2>2D & 3D Array Output</h2>
+
+    <script>
+
+        let arr1 = [
+            [1, 2],
+            [2, 1]
+        ];
+
+        document.write("<h3>2D Array Output</h3>");
+        for (let i = 0; i < arr1.length; i++) {
+            for (let j = 0; j < arr1[i].length; j++) {
+                document.write("2D Element at [" + i + "][" + j + "] = " + arr1[i][j] + "<br>");
+            }
+        }
+        let arr3D = [
+            [ // Layer 0
+                [1, 2],
+                [3, 4]
+            ],
+            [ // Layer 1
+                [5, 6],
+                [7, 8]
+            ]
+        ];
+
+        document.write("<h3>3D Array Output</h3>");
+        for (let i = 0; i < arr3D.length; i++) {
+            for (let j = 0; j < arr3D[i].length; j++) {
+                for (let k = 0; k < arr3D[i][j].length; k++) {
+                    document.write("3D Element at [" + i + "][" + j + "][" + k + "] = " + arr3D[i][j][k] + "<br>");
+                }
+            }
+        }
+    </script>
+    <pre>
+    Lab No:4.b
+        Name: Kiran Bhatta
+        Roll No./Section: 19'A'
+  </pre>
+</body>
+</html>
