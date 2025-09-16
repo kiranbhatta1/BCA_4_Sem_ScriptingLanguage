@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For-of&for-in</title>
+</head>
+<body>
+    <script>
+        const cast =["bhatta","rai","subedi"];
+
+        const intro={
+            name:"kiran",
+            address:"ktm",
+            year:2004
+        };
+        document.write("<h4> for..in (array):</h3>");
+            for(let i in cast ){
+                document.write(i+":"+cast[i]+"<br>");
+
+            }
+             document.write("<h3>for...of (array):</h3>");
+             for(let name of cast){
+                document.write(name+"<br>");
+             }
+             document.write("<h3> for...in (object):</h3>");
+             for(let key in intro){
+                document.write(key+":"+intro[key]+"<br>");
+             }
+
+             
+
+    </script>
+    <pre>
+            Lab No:4.b
+        Name: Kiran Bhatta
+        Roll No./Section: 19'A'
+        </pre>
+
+</body>
+</html>
