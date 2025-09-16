@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Delete Element from Array</title>
+</head>
+<body>
+    <script>
+        let arr=[10,15,20,25];
+        let position=2;
+        document.write("<h3>Original Array:</h3>");
+        document.write(arr.join(",")+ "<br>");
+        if(position>=0 && position < arr.length){
+            arr.splice(position,1);
+            document.write("<h3>Array after deleting element at position"+position +":</h3>");
+            document.write(arr.join(","));
+
+        }else{
+            document.write("<h3>Invalid position!</h3>");
+        }
+    </script>
+    <pre>
+            Lab No:4.e
+        Name: Kiran Bhatta
+        Roll No./Section: 19'A'
+        </pre>
+</body>
+</html>
