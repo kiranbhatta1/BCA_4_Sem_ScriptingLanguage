@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array Methods Demo</title>
+</head>
+<body>
+    <h2>Open the console to see array method outputs</h2>
+
+    <script>
+        console.log("--- Array Methods---");
+
+        const numbers = [10, 20, 30, 40, 50, 30, 20];
+        const fruits = ["Apple", "Banana", "Mango"];
+
+        console.log("includes():", numbers.includes(30)); 
+
+
+        const found = numbers.find(num => num > 25);
+        console.log("find():", found); 
+        const findIndex = numbers.findIndex(num => num > 25);
+        console.log("findIndex():", findIndex); 
+
+        console.log("indexOf():", numbers.indexOf(30)); 
+
+        console.log("lastIndexOf():", numbers.lastIndexOf(30)); 
+
+        console.log("join():", fruits.join(" - "));
+
+        const moreFruits = ["Orange", "Grapes"];
+        const allFruits = fruits.concat(moreFruits);
+        console.log("concat():", allFruits);
+
+
+        const popped = fruits.pop();
+        console.log("pop():", popped);
+        console.log("After pop:", fruits);
+
+
+        fruits.push("Kiwi");
+        console.log("push():", fruits);
+
+
+        console.log("reverse():", [...numbers].reverse());
+
+
+        const shifted = fruits.shift();
+        console.log("shift():", shifted);
+        console.log("After shift:", fruits);
+
+
+        fruits.unshift("Papaya");
+        console.log("unshift():", fruits);
+
+
+        const sliced = numbers.slice(1, 4);
+        console.log("slice():", sliced);
+        const mapped = numbers.map(n => n * 2);
+        console.log("map():", mapped);
+
+        const unsorted = [30, 5, 100, 1];
+        console.log("Before sort():", unsorted);
+        console.log("sort():", unsorted.sort((a, b) => a - b));
+        const allAbove5 = numbers.every(n => n > 5);
+        console.log("every():", allAbove5); 
+
+        
+    </script>
+    <pre>
+        Lab No:4.f
+        Name: Kiran Bhatta
+        Roll No./Section: 19'A'
+    </pre>
+</body>
+</html>
