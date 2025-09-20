@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Function Creation</title>
+</head>
+<body>
+    <p id="declaration"></p>
+    <p id="expression"></p>
+
+    <script>
+       
+        let num1 = parseInt(prompt("Enter first number:"));
+        let num2 = parseInt(prompt("Enter second number:"));
+
+    
+        function addDeclaration(a, b) {
+            return a + b;
+        }
+        const addExpression = function(a, b){
+            return a + b;
+        }
+   
+        let result1 = addDeclaration(num1, num2);
+        let result2 = addExpression(num1, num2);
+
+        document.getElementById('declaration').innerHTML = "Using Function Declaration: " + result1;
+        document.getElementById('expression').innerHTML="Using Function Expression: " + result2;
+    </script>
+    <pre>
+        Lab No:5.a
+        Name: Kiran Bhatta
+        Roll No./Section: 19'A'
+    </pre>
+</body>
+</html>
